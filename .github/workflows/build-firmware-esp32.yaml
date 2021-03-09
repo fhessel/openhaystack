@@ -19,7 +19,7 @@ jobs:
           mkdir -p archive/build
           cp Firmware/ESP32/flash_esp32.sh archive/
       - name: "Build ESP32 Firmware"
-        uses: actions/build-esp-idf@v1
+        uses: ./.github/actions/build-esp-idf
         with:
           src-dir: Firmware/ESP32
           dst-dir: archive/build
