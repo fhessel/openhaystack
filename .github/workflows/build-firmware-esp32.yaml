@@ -24,7 +24,7 @@ jobs:
         uses: ./.github/actions/build-esp-idf
         with:
           src-dir: Firmware/ESP32
-          dst-dir: archive/build
+          out-dir: archive/build
           app-name: openhaystack
       - name: "Create Archive"
         uses: actions/upload-artifact@v2
